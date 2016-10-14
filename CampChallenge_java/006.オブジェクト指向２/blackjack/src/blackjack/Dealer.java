@@ -76,7 +76,7 @@ public class Dealer extends Human {
     @Override
     public int open(){
         if((this.hand.contains(1))||(this.hand.contains(14))
-                ||(this.hand.contains(27))||(this.hand.contains(33))){
+                ||(this.hand.contains(27))||(this.hand.contains(40))){
             if(cardSum() > 21){
                 return cardSum() - 10;
             }else{
