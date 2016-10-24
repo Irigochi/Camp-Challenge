@@ -1,0 +1,14 @@
+SMAP
+userView_jsp.java
+JSP
+*S JSP
+*F
++ 0 userView.jsp
+WEB-INF/jsp/userView.jsp
+*L
+5,7:45
+12,2:53
+13,6:55
+19,9:62
+27,4:71
+*E
