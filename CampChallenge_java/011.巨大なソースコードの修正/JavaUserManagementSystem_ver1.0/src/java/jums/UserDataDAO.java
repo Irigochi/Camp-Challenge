@@ -29,9 +29,9 @@ public class UserDataDAO {
         Connection con = null;
         PreparedStatement st = null;
         try{
-            //con = DBManager.getConnection();
-            Class.forName("com.mysql.jdbc.Driver").newInstance();
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","root","kirara0918");
+            con = DBManager.getConnection();
+            //Class.forName("com.mysql.jdbc.Driver").newInstance();
+            //con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Challenge_db","root","kirara0918");
             st = con.prepareStatement("INSERT INTO user_t(name,birthday,tell,type,comment,newDate) VALUES(?,?,?,?,?,?)");
             st.setString(1, ud.getName());
             st.setDate(2, ud.getBirthday());//指定のタイムスタンプ値からSQL格納用のDATE型に変更
