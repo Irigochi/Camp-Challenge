@@ -44,7 +44,7 @@
             <option value="">--</option>
             <%
             if(sMonth != null){ %>
-            <option value="<%= sMonth%>" selected><%= sMonth%></option>    
+            <option value="<%= sMonth%>" selected><%= sMonth%></option>
             <% }
             for(int i = 1; i<=12; i++){ %>
             <option value="<%=i%>"><%=i%></option>
