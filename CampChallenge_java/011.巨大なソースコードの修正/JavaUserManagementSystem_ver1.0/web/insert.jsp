@@ -65,8 +65,8 @@
         種別:
         <br>
         <input type="radio" name="type" value="1" <%if(sRadio == null || sRadio.equals("1")){%>checked<%}%>>エンジニア<br>
-        <input type="radio" name="type" value="2" <%if(sRadio != null && sRadio.equals("2")){%>checked<%}%>>営業<br>
-        <input type="radio" name="type" value="3" <%if(sRadio != null && sRadio.equals("3")){%>checked<%}%>>その他<br>
+        <input type="radio" name="type" value="2" <%else if(sRadio.equals("2")){%>checked<%}%>>営業<br>
+        <input type="radio" name="type" value="3" <%else if(sRadio.equals("3")){%>checked<%}%>>その他<br>
         <br>
 
         電話番号:
